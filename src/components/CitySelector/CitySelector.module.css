@@ -1,0 +1,12 @@
+.selector {
+    margin-bottom: 20px;
+}
+
+select {
+    padding: 6px 12px;
+    font-size: 16px;
+    background-color: #58B15F;
+    border: 2px solid #000;
+    border-radius: 12px;
+    color: #ADDAAF;
+}

@@ -1,0 +1,8 @@
+.quizContainer {
+    padding: 20px;
+    margin-bottom: 20px;
+    max-width: 400px;
+    border-radius: 8px;
+    border: 1px solid #ADFF2F;
+    background-color: #80B86F;
+}

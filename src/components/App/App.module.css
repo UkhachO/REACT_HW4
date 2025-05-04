@@ -1,0 +1,25 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #6DD08C;
+}
+
+.container {
+    height: 650px;
+    width: 1000px;
+    background-color: #80B86F;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border: 3px solid #ADFF2F;
+    border-radius: 15px;
+}
+
+.MathApp {
+    text-align: center;
+    padding: 40px;
+}

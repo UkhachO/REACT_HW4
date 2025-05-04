@@ -1,0 +1,22 @@
+.form {
+    margin-top: 20px;
+}
+
+input {
+    padding: 6px 10px;
+    font-size: 16px;
+    width: 100px;
+    background-color: #58B15F;
+    border: 2px solid black;
+    border-radius: 12px;
+}
+
+button {
+    padding: 6px 12px;
+    margin-left: 10px;
+    font-size: 16px;
+    background-color: #58B15F;
+    border: 2px solid black;
+    border-radius: 12px;
+    color: #ADDAAF;
+}
