@@ -8,32 +8,33 @@ import MathQuiz from "../MathQuiz/MathQuiz.jsx";
 import styles from "./App.module.css";
 
 function App() {
-
   const [selectedCity, setSelectedCity] = useState(null);
 
   const handleSelect = (cityName) => {
-    const foundCity = citiesData.find(city => city.name === cityName);
+    const foundCity = citiesData.find((city) => city.name === cityName);
     setSelectedCity(foundCity || null);
   };
 
   return (
     <>
-
-       <div className={styles.container}>
-
+      <div className={styles.container}>
         <CitySelector cities={citiesData} onSelect={handleSelect} />
-        <CityCard city={selectedCity} />
 
+        {selectedCity && (
+          <CityCard
+            name={selectedCity.name}
+            description={selectedCity.description}
+            imageUrl={selectedCity.imageUrl}
+            facts={selectedCity.facts}
+          />
+        )}
       </div>
 
       <div className="MathApp">
-
-      <MathQuiz />
-      
+        <MathQuiz />
       </div>
-
     </>
-  )
+  );
 }
 
-export default App
+export default App;
